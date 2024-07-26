@@ -17,7 +17,7 @@ const Contact = () => {
                 </tr>
                 <tr>
                     <th>Email</th>
-                    <td className='email'><a href='mailto:hbabb@hbc-dps.com'>Email Me</a></td>
+                    <td className='email'><a href='mailto:resume@heath-babb.tech'>Email Me</a></td>
                 </tr>
             </table>
         </div>
