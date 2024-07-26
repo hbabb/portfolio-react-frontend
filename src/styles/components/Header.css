@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header {
+    @apply /* fixed top-0 left-0 right-0  */text-center pt-2 bg-gray-800/[0.9];
+    height: 60px;
+    z-index: 50;
+}
+
+.navbar {
+    @apply flex justify-center items-center px-4;
+}
+
+.hamburger {
+    @apply text-white lg:hidden;
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 9999;
+}
+
+.menu {
+    @apply flex-col items-center hidden lg:flex lg:flex-row lg:justify-center lg:items-center bg-gray-800/[0.9] lg:static;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 50%;
+    text-align: center;
+    padding: 1rem 0;
+    z-index: 50;
+}
+
+.menu.open {
+    @apply flex;
+}
+
+.navbar ul {
+    @apply flex-col lg:flex lg:flex-row lg:justify-center lg:items-center;
+}
+
+.navbar ul li {
+    @apply mx-4 text-white text-2xl;
+}
+
+.navbar ul li:hover {
+    @apply text-light-green;
+}
+
+@media (max-width: 767px) {
+    .header {
+        @apply fixed top-0 left-0 right-0;
+    }
+
+    .menu {
+        @apply flex-col items-center bg-gray-800/[0.9] absolute top-60 right-0 w-full text-center p-4;
+    }
+}
+
+@media (min-width: 768px) {
+    .hamburger {
+        @apply hidden;
+    }
+
+    .menu {
+        @apply flex-row static flex justify-center items-center;
+        background-color: transparent;
+        padding: 0;
+    }
+}

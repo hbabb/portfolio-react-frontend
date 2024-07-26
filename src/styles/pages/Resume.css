@@ -1,0 +1,79 @@
+/* portfolio-react\frontend\src\styles\pages\Resume.css */
+/* Import Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Resume styles */
+.heading {
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0de809;
+    border-bottom: 3px solid #0de809;
+    margin-bottom: 0.5rem;
+}
+    
+.heading ul {
+    list-style: none;
+}
+
+li {
+    font-family: 'Encode Sans', sans-serif;
+    padding-left: 1rem;
+    line-height: 1.5;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.work {
+    font-family: 'Encode Sans', sans-serif;
+    text-align: justify;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    line-height: 1.5;
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+}
+
+.table {
+    @apply w-full min-w-full mt-4 border-collapse text-white table-auto;
+    font-family: 'Encode Sans', sans-serif
+}
+
+th, td {
+    @apply pt-3 px-4 border border-white text-left;
+}
+
+th {
+    color: #0de809;
+    font-weight: 700;
+    background-color: #333;
+}
+
+td {
+    background-color: #444;
+}
+
+tr:nth-child(even) td {
+    background-color: #555;
+}
+
+tr:hover td {
+    background-color: #666;
+}
+
+@media (max-width: 768px) {
+    .table {
+        font-size: 0.875rem;
+    }
+
+    th, td {
+        padding: 0.5rem;
+    }
+}

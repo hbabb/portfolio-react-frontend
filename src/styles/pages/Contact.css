@@ -1,0 +1,43 @@
+/* .contact {
+    justify-items: center;
+} */
+
+.heading {
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0de809;
+    border-bottom: 3px solid #0de809;
+    margin-bottom: 0.5rem;
+}
+
+.table-contact {
+    width: 60%;
+    max-width: 600px;
+    border-collapse: collapse;
+    border: 1px solid white;
+    color: white;
+    margin: 0 auto;
+}
+
+.table-contact th {
+    padding: 0.5rem;
+    text-align: left;
+    font-family: 'Encode Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.table-contact td {
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.email a {
+    text-decoration: none;
+}
+
+.email a:hover {
+    color: #0de809;
+    text-decoration: underline;
+}

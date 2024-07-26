@@ -1,0 +1,39 @@
+/* portfolio-react\frontend\src\styles\components\LogoSection.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .logo-section {
+        @apply flex items-center justify-center mt-8;
+        /* flex properties for horizontal alignment */
+    }
+
+    .logo-container {
+        @apply flex-shrink-0 flex items-center;
+    }
+
+    .logo {
+        width: 150px;
+        height: auto;
+        /* transform: scale(.75); */
+    }
+
+    .text-container {
+        @apply text-center;
+        margin-left: -1.5rem;
+    }
+
+    .text-container h1 {
+        @apply text-3xl text-white font-semibold italic m-0;
+        font-family: 'Arimo', sans-serif;
+        letter-spacing: 0.35rem;
+    }
+
+    .text-container p {
+        @apply text-base font-normal mt-0;
+        letter-spacing: 0.15rem;
+        font-family: 'Encode Sans', sans-serif;
+        color: #0de809;
+    }
+}

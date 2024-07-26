@@ -1,0 +1,50 @@
+/* src/styles/pages/Home.css */  
+.name {
+  font-family: 'Encode Sans', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #0de809;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 250px;
+  height: 300px;
+  border: 5px solid #0de809;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.heading {
+  font-family: 'Encode Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0de809;
+  border-bottom: 3px solid #0de809;
+  margin-bottom: 0.5rem;
+}
+
+.summary {
+  font-family: 'Noto Sans', sans-serif;
+  text-align: justify;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  line-height: 1.5;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: white;
+}
+
+.summary a {
+  color: #0de809;
+  text-decoration: underline;
+  font-weight: 700;
+}

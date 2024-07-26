@@ -1,0 +1,73 @@
+/* portfolio-react\frontend\src\styles\components\Footer.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+    .footer {
+        @apply mt-auto/*  sticky bottom-0 left-0 right-0 */ flex justify-between items-center p-2 bg-gray-800;
+        width: 100%;
+    }
+
+    .footer p {
+        @apply m-0 text-left text-white text-base lg:text-2xl;
+    }
+
+    .construction {
+        @apply text-red-500 italic;
+    }
+
+    .social-icons {
+        @apply flex text-white space-x-4;
+    }
+
+    .social-link {
+        @apply text-inherit;
+    }
+
+    .social-link:hover {
+        @apply text-light-green; /* or whatever hover color you want */
+    }
+
+    /* Add media queries for responsive design */
+    @media (max-width: 768px) {
+        .footer{
+            @apply flex-col items-center text-center;
+        }
+
+        .footer p{
+            @apply text-center;
+        }
+
+        .social-icons {
+            @apply flex-row items-center space-x-2 space-y-0;
+        }
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .footer {
+            @apply flex-row items-center;
+        }
+
+        .footer p {
+            @apply text-left;
+        }
+
+        .social-icons {
+            @apply flex-row items-center;
+        }
+    }
+
+    @media (min-width: 1025px) {
+        .footer {
+            @apply flex-row items-center;
+        }
+
+        .footer p {
+            @apply text-left;
+        }
+
+        .social-icons {
+            @apply flex-row items-center;
+        }
+    }
+}
